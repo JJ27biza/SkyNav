@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+   >
+    <TextView
+        android:id="@+id/inicioSesion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtInicio_Sesion"
+        android:textSize="@dimen/tamañoInicio"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/marginTopInicio"
+        ></TextView>
+    <TextView
+        android:id="@+id/crearSesión"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_crear_sesi_n"
+        android:textSize="@dimen/tamañoInicio"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/marginTopInicio"
+        ></TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/linearImg"
+    android:orientation="vertical"
+    android:gravity="center">
+
+
+    <ImageView
+        android:id="@+id/travel"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:src="@drawable/travel1"></ImageView>
+
+
+    <TextView
+        android:id="@+id/txtMuevete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_muevete_volando"
+        android:textStyle="bold"
+        android:textSize="@dimen/txt_tamaño_muevete"
+        android:textColor="@color/azul"
+        ></TextView>
+
+
+
+
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/altoSkynav"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:id="@+id/linearSecundario"
+        android:padding="@dimen/paddingSkynav"
+        android:background="@color/colorFondoInicio">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SKYNAV"
+            android:textSize="@dimen/tamañoSkynav"
+            android:textStyle="bold|italic"
+            android:textColor="@color/azul"></TextView>
+        <EditText
+            android:id="@+id/etnombre"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/nombre"
+            android:inputType="textCapWords"
+            android:textAlignment="center"></EditText>
+        <EditText
+            android:id="@+id/etusuario"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/usuario"
+            android:inputType="text"
+            android:textAlignment="center"></EditText>
+        <EditText
+            android:id="@+id/etcontraseña"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/contrasenha"
+            android:password="true"
+            android:layout_marginBottom="30dp"
+            android:inputType="textPassword"
+            android:textAlignment="center"></EditText>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btnDBCrear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/crear"
+            android:onClick="onClickDBCrear"></Button>
+        <Button
+            android:id="@+id/btnDBInicio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/inicio_sesi_n"
+            android:onClick="onClickDBInicio"></Button>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/volver"
+                android:onClick="onClickVolver"></Button>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

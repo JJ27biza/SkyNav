@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Datos personales"
+        android:textSize="@dimen/tamañoInicio" />
+
+    <ImageView
+        android:id="@+id/imgPerfil"
+        android:layout_marginTop="@dimen/margintop_img_main_8"
+        android:layout_width="@dimen/tamaño_ancho_largo_img_perfil"
+        android:layout_height="@dimen/tamaño_ancho_largo_img_perfil"
+        android:src="@drawable/p"
+        android:scaleType="centerCrop" />
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="3"
+    android:orientation="vertical"
+    android:layout_marginTop="@dimen/margintop_main_8">
+
+    <EditText
+        android:id="@+id/etnombrePerfil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/nombre_completo"
+        android:inputType="textCapWords" />
+
+    <EditText
+        android:id="@+id/etcorreoPerfil"
+        android:layout_marginTop="@dimen/margintop_et_main_8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="GMAIL"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/etTelefonoPerfil"
+        android:layout_marginTop="@dimen/margintop_et_main_8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/telefono"
+        android:inputType="numberSigned"
+        android:maxLength="9" />
+
+    <EditText
+        android:id="@+id/etEdadPerfil"
+        android:layout_marginTop="@dimen/margintop_et_main_8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/edad"
+        android:inputType="numberSigned"
+        android:maxLength="3" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/actualizar"
+            android:onClick="onClickActualizar"></Button>
+    </LinearLayout>
+
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/volver"
+        android:onClick="onClickVolver"/>
+
+</LinearLayout>
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_user"
+        android:title="Usuario"
+        android:visible="false">
+        <menu>
+            <item
+                android:id="@+id/perfil"
+                android:title="Perfil"/>
+            <item
+                android:id="@+id/compras"
+                android:title="Compras"/>
+
+        </menu>
+    </item>
+    <item
+        android:id="@+id/menu_options"
+        android:title="Ayuda">
+        <menu>
+            <item
+                android:id="@+id/llamada"
+                android:title="Llamada"/>
+            <item
+                android:id="@+id/web"
+                android:title="Web"/>
+
+        </menu>
+    </item>
+<item android:id="@+id/acerca"
+    android:title="Acerca de"></item>
+    <item android:id="@+id/finalizar"
+        android:title="Finalizar"></item>
+
+</menu>

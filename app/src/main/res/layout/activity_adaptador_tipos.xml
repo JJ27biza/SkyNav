@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+    <ImageView
+        android:id="@+id/imgVuelos"
+        android:layout_width="@dimen/img_ancho_tipo"
+        android:layout_height="@dimen/img_alto_tipo"
+        android:layout_margin="@dimen/margin_img_tipo_vuelo"></ImageView>
+
+    <TextView
+
+        android:id="@+id/tvTexto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/txt_margin_tipo_vuelo"
+        android:textStyle="bold"
+        android:textSize="@dimen/txt_tamaño_tipo_vuelo"
+
+        >
+    </TextView>
+
+</LinearLayout>
