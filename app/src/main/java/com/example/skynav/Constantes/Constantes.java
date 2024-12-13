@@ -2,17 +2,16 @@ package com.example.skynav.Constantes;
 
 public class Constantes {
 
-    public  static final String DB_name="DBSkyNav";
     public static  final  String DB_tablename="usuarios";
     public  static final String colum1="id";
     public static  final String colum2="nombre";
     public static  final String colum3="user";
     public static  final String colum4="pass";
 
+
     public static  final  int version = 1;
 
     public static final String DB_tablename_2="vehiculo";
-    public static final String vehiculo_column1="id";
     public static final String vehiculo_column2="nombre";
     public static final String vehiculo_column3="tipo";
     public static final String vehiculo_column4="precio";

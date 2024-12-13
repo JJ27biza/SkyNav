@@ -50,7 +50,6 @@ public class MainActivity4 extends AppCompatActivity {
     private String plazas;
     private String txtSumaPersonas;
     private SharedPreferences sharedPreferences;
-    private String txtTotal;
     private String accion="1";
     private ArrayList<EditText> arrayEt= new ArrayList<>();
     @Override

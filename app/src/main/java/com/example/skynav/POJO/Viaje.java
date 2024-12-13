@@ -1,26 +1,26 @@
 package com.example.skynav.POJO;
 
 public class Viaje {
-    private String avion;
+    private String vehiculo;
     private String fecha;
     private String origen;
     private String destino;
     private int id;
 
-    public Viaje(String avion, String fecha, String origen, String destino, int id) {
-        this.avion = avion;
+    public Viaje(String vehiculo, String fecha, String origen, String destino, int id) {
+        this.vehiculo = vehiculo;
         this.fecha = fecha;
         this.origen = origen;
         this.destino = destino;
         this.id = id;
     }
 
-    public String getAvion() {
-        return avion;
+    public String getVehiculo() {
+        return vehiculo;
     }
 
-    public void setAvion(String avion) {
-        this.avion = avion;
+    public void setVehiculo(String vehiculo) {
+        this.vehiculo = vehiculo;
     }
 
     public String getFecha() {

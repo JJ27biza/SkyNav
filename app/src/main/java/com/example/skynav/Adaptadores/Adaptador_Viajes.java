@@ -1,20 +1,19 @@
 package com.example.skynav.Adaptadores;
 
 import android.app.Activity;
-import android.content.Context;
-import android.graphics.drawable.Drawable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
-import android.widget.ImageView;
 import android.widget.TextView;
 
+
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 
 import com.example.skynav.POJO.Viaje;
 import com.example.skynav.R;
+
+import org.jetbrains.annotations.Nullable;
 
 import java.util.ArrayList;
 
@@ -22,7 +21,7 @@ public class Adaptador_Viajes extends ArrayAdapter {
     private Activity context;
    private ArrayList<Viaje> arrayViaje= new ArrayList<Viaje>();
     private int layoutPersonalizado;
-    public Adaptador_Viajes(@NonNull Activity context, int layoutPersonalizado,ArrayList<Viaje>arrayViaje) {
+    public Adaptador_Viajes(@NonNull Activity context, int layoutPersonalizado, ArrayList<Viaje>arrayViaje) {
         super(context, layoutPersonalizado,arrayViaje);
         this.context=context;
         this.arrayViaje=arrayViaje;
@@ -57,7 +56,7 @@ public class Adaptador_Viajes extends ArrayAdapter {
 
 
 
-        tvAvion.setText(arrayViaje.get(position).getAvion().toString());
+        tvAvion.setText(arrayViaje.get(position).getVehiculo().toString());
         tvOrigen.setText(arrayViaje.get(position).getOrigen().toString()+" >> ");
         tvDestino.setText(arrayViaje.get(position).getDestino().toString());
         tvFecha.setText(arrayViaje.get(position).getFecha().toString());
